@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
+import { CountUpModule } from 'countup.js-angular2';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { RouterModule } from '@angular/router';
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    CountUpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
